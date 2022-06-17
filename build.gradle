@@ -1,0 +1,20 @@
+plugins{
+    id 'java'
+}
+jar{
+  manifest{
+        attributes 'Main-Class': 'pl.karlz.GradleTutorial'}
+
+}
+repositories{
+    mavenCentral()
+}
+dependencies {
+    implementation 'org.testng:testng:7.1.0'
+    testImplementation group: 'junit', name: 'junit', version: '4.11'
+}
+/*test{
+    useJUnitPlatform()
+}*/
+
+
